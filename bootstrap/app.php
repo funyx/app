@@ -10,9 +10,8 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
-
-$app = new LaravelZero\Framework\Application(
-    dirname(__DIR__)
+$app = new Illuminate\Foundation\Application(
+    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
 
 /*
@@ -27,8 +26,13 @@ $app = new LaravelZero\Framework\Application(
 */
 
 $app->singleton(
+    Illuminate\Contracts\Http\Kernel::class,
+    App\Http\Kernel::class
+);
+
+$app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    LaravelZero\Framework\Kernel::class
+    App\Console\Kernel::class
 );
 
 $app->singleton(
