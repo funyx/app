@@ -18,5 +18,7 @@ Route::get('/login', function () {
 });
 
 Route::get('/', function () {
-    return 'asd';
+    $app = new \Atk4\Ui\App(['title' => config('app.title'), 'always_run' => false]);
+    $app->initLayout([\Atk4\Ui\Layout\Admin::class]);
+    return $app->run();
 });

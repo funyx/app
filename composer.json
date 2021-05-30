@@ -5,19 +5,15 @@
     "version": "0.0.1",
     "type": "project",
     "license": "MIT",
-    "support": {
-        "issues": "https://github.com/laravel-zero/laravel-zero/issues",
-        "source": "https://github.com/laravel-zero/laravel-zero"
-    },
     "authors": [
         {
-            "name": "Nuno Maduro",
-            "email": "enunomaduro@gmail.com"
+            "name": "funyx",
+            "email": "ddobchev@gmail.com"
         }
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "illuminate/database": "^8.40",
+        "atk4/ui": "dev-develop as 3.0.0",
         "laminas/laminas-text": "^2.8",
         "laravel/framework": "^8.44"
     },
@@ -43,5 +39,19 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "bin": ["atk4"]
+    "bin": ["atk4"],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:funyx/data.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:funyx/ui.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:funyx/login.git"
+        }
+    ]
 }
