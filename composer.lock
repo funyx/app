@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87ee55c7727b967ceaa975bb75545a7b",
+    "content-hash": "9beae3d36acd67749da48632330b25e7",
     "packages": [
         {
             "name": "atk4/core",
@@ -8009,8 +8009,8 @@
         {
             "package": "atk4/ui",
             "version": "dev-develop",
-            "alias": "3.0.0",
-            "alias_normalized": "3.0.0.0"
+            "alias": "3.1.0",
+            "alias_normalized": "3.1.0.0"
         }
     ],
     "minimum-stability": "dev",

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,5 @@ Route::get('/login', function () {
 });
 
 Route::get('/', function () {
-    $app = new \Atk4\Ui\App(['title' => config('app.title'), 'always_run' => false]);
-    $app->initLayout([\Atk4\Ui\Layout\Admin::class]);
-    return $app->run();
+    return View::make('Dashboard');
 });

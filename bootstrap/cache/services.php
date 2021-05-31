@@ -14,6 +14,7 @@
     10 => 'Pest\\Laravel\\PestServiceProvider',
     11 => 'App\\Providers\\AppServiceProvider',
     12 => 'App\\Providers\\RouteServiceProvider',
+    13 => 'App\\Providers\\ViewServiceProvider',
   ),
   'eager' => 
   array (
@@ -27,6 +28,7 @@
     7 => 'Pest\\Laravel\\PestServiceProvider',
     8 => 'App\\Providers\\AppServiceProvider',
     9 => 'App\\Providers\\RouteServiceProvider',
+    10 => 'App\\Providers\\ViewServiceProvider',
   ),
   'deferred' => 
   array (
